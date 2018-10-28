@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-[Available here](https://drive.google.com/open?id=1yDKWiuJ4BrFuaZrVRm-HknmQljTDHAb86zvwU704rls)
+[Available here](https://docs.google.com/document/d/12CLYTcZIJNytO0h9gXutqBBUVRvfl3xjrue3EeKopeo/edit?usp=sharing)
 
 ## Code
 
@@ -14,4 +14,4 @@
 
 ## Slides
 
-[Available here](https://docs.google.com/presentation/d/1cSs3-wpXwhnaLNdzn7jt0Dc8IHfB0ZU_BDG8oFSbUP8/edit?usp=sharing)
+[Available here](https://docs.google.com/presentation/d/1C2B-KqXyBOAZXmRhDzCtafBNuJSTxMwcRRg-1DOBLSU/edit?usp=sharing)
