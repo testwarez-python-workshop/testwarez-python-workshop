@@ -3,13 +3,13 @@ from app.users import USERS
 
 app = Flask(__name__)
 
-GET = 'GET'
-POST = 'POST'
+GET = "GET"
+POST = "POST"
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return 'Hello World'
+    return "Hello World"
 
 
 @app.route("/user/<username>", methods=[GET])
@@ -25,7 +25,7 @@ def access_users(username):
 @app.route("/user/<username>", methods=[POST])
 def add_user(username):
     if request.method == POST:
-        USERS.update({username: {'name': 'David Sale'}})
+        USERS.update({username: request.get_json()})
         return "New user created"
 
 
