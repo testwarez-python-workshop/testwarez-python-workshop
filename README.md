@@ -9,7 +9,8 @@
 ### Branches
 - pycharm - introduction to PyCharm
 - import - how imports work in Python
-- basics - Python basics and exercises
+- basics - python basics and exercises
+- pytest - introduction to pytest
 - advanced - diving deep into Python
 
 ## Slides
