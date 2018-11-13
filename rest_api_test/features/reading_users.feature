@@ -1,5 +1,8 @@
-Feature: Managing users details
-    As a customer
+Feature: Reading users details
+  As a data manager
+  I want to read user detail
+  So that I can deliver proper information
+
 
 
   @smoke
