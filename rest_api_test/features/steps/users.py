@@ -19,6 +19,12 @@ def step_impl(context, user_name):
     context.user_data = res.json()
 
 
+@then('I can get all data')
+def step_impl(context):
+    res = user_manager.get_all_users()
+    assert_that(res.status_code, equal_to(200))
+
+
 @when('I get all data')
 def step_impl(context):
     res = user_manager.get_all_users()
