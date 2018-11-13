@@ -32,5 +32,11 @@ def get_users():
     return jsonify(USERS)
 
 
+@app.route("/clean_db", methods=[GET])
+def clean_db():
+    USERS.clear()
+    return Response(status=200)
+
+
 if __name__ == "__main__":
     app.run()
