@@ -15,6 +15,7 @@ def step_impl(context):
 @when('I get "{user_name}" data')
 def step_impl(context, user_name):
     res = user_manager.get_user(user_name)
+    assert_that(res.status_code, equal_to(200))
     context.user_data = res.json()
 
 

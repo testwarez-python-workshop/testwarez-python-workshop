@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, Response
 from app.users import USERS
 
+initial_users = USERS.copy()
 app = Flask(__name__)
 
 GET = "GET"
@@ -38,5 +39,12 @@ def clean_db():
     return Response(status=200)
 
 
+@app.route("/restore_db", methods=[GET])
+def restore_db():
+    USERS.update(initial_users)
+    return Response(status=200)
+
+
 if __name__ == "__main__":
     app.run()
+

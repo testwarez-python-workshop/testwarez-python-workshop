@@ -11,7 +11,7 @@ Feature: Managing users details
     |dejv|Dawid Pacia |
     |yoloxd|Bart Szulc|
 
-
+  @empty_db
   Scenario Outline:
     Given server is responding
     When I get "<user>" data
