@@ -9,14 +9,13 @@ Feature: Reading users details
     Then I can get all data
 
 
-  @smoke
   Scenario: Check if database consist of proper data
     Given server is responding
     When I get all data
     Then I can see following parameters
-    |user|name        |
-    |dejv|Dawid Pacia |
-    |yoloxd|Bart Szulc|
+    |user  |name       |
+    |dejv  |Dawid Pacia|
+    |yoloxd|Bart Szulc |
 
   @empty_db
   Scenario Outline: Check if database consist of proper data
