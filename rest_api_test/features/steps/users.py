@@ -41,3 +41,16 @@ def step_impl(context):
 @then('I can see name "{name}"')
 def step_impl(context, name):
     assert_that(context.user_data, has_value(name))
+
+
+@when('I create "{name}" user with following data')
+def step_impl(context, name):
+    user_data = {}
+    for row in context.table:
+        user_data[row["key"]] = row["value"]
+    user_manager.add_user(name, user_data)
+
+
+@then('number of users is "{num_val}"')
+def step_impl(context, num_val):
+    assert_that(context.user_data, has_length(int(num_val)))
